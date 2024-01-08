@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+//   let y = [100, 50, 4478, 96, 63];
+// let sum = 0;
+
+// for (let i = 0; i < y.length; i++) {
+//     if (y[i] > 0) {
+//         sum = sum + y[i];
+//     }
+// }
+//console.log(sum);
+
+// let y = [100, 50, 4478, 96, 63];
+// let max = 0;
+// for (let i = 0; i < y.length; i++) {
+//     if (max < y[i]) {
+//         max = y[i];
+//     }
+// }
+//console.log(max);
+
+//SecondMaximum 
+// let y = [100, 50, 4478, 96, 63];
+// let max = 0;
+
+// for (let i = 0; i < y.length; i++) {
+//     if (max < y[i]) {
+//         max = y[i];
+//     }
+// }
+// let secondMax = 0;
+// for (let i = 0; i < y.length; i++) {
+//     if (y[i] < max && y[i] > secondMax) {
+//         secondMax = y[i];
+//     }
+// }
+// console.log(secondMax);
+
+// let y = [100, 50, 4478, 96, 63];
+// let mix = Infinity;
+
+// for (let i = 0; i < y.length; i++) {  
+//     if (mix > y[i]) {
+//         mix = y[i];
+//     }
+// }
+// let secondMix = Infinity;
+// for (let i = 0; i < y.length; i++) {
+//     if (y[i] > mix && y[i] < secondMix) {
+//         secondMix = y[i];
+//     }
+// }
+// console.log(secondMix);
+ </script>
+    
+</body>
+</html>
