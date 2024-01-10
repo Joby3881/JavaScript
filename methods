@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let arr = [10, 20, 30, 40, 50];
+// let a = arr.pop();
+// let b = arr.pop();
+// let c = arr.shift();
+// let d = arr.shift();
+
+// arr.push(c);
+// arr.push(d);
+// arr.unshift(a);
+// arr.unshift(b);
+
+//map function
+// let arr = [10, 20, 30, 40, 50];
+// let b = arr.map(function(item) {
+//     return item - 1;
+// });
+// console.log(b);
+
+// let arr = [10, "dfghj", "30", -40, 50,7];
+// let b = arr.map(function(item) {
+//     if (item < 0)
+//         return "posi";
+//     else if (item >="a" && item<="z" || item >= "A" && item<="Z")
+//         return "String";
+//         else if (item > 0)
+//         return "nag";
+//     else if(item%2==0){
+//         return "even";
+//     }
+// })
+// console.log(b);
+
+// let arr = [10, 20,5,3,"red" -40, 50,70,60,80];
+// let b = arr.filter(function(item) {
+//    return item>50;
+// })
+// console.log(b);
+
+let arr = [1,2,3,4,5,6,7];
+let b = arr.reduce((x,y)=> {
+   if(x>y){
+    return x;
+   }else{
+    return y;
+   }
+})
+console.log(b);
+
+    </script>
+</body>
+</html>
