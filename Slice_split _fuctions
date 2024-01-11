@@ -1,0 +1,24 @@
+//slice fuction
+// let a = [1,2,3,4,5,6,7];
+// console.log(a.slice(2,4));
+// console.log(a.slice(2));
+// console.log(a.slice(-1));
+// console.log(a.slice(0,-1));
+// console.log(a.slice(-4,-1));
+
+//splice fuction
+// let a = [1,2,3,4,5,6,7];
+// a.splice(0,2,"aman")
+// console.log(a)
+// a.splice(1,2,"aman","naman")
+// console.log(a)
+
+//split fuction
+// let a = "aman-mohit-rohit-sumit";
+// let b = a.split("-");
+// console.log(b);
+// console.log(b.join(","))
+
+//flat fuction
+// let a = [10, 20, [70, 80, ["aman", [100, 200], 90], 30], "ankit"];
+// console.log(a.flat(3));
