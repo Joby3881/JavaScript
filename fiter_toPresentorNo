@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>Submit</button>
+    <button id="prnt">Print</button>
+    <input type="text" id="inp2">
+    <button id="filter">filter</button>
+    <div id="resultDisplay"></div>
+
+    <script>
+      let arr1 = [];
+      let arr2 = [];
+      let btn = document.querySelector("button");
+      let resultDisplay = document.getElementById("resultDisplay");
+
+      btn.addEventListener("click", function() {
+        let input = document.querySelector("input");
+        let inputValue = parseInt(input.value);
+        input.value = ""; // Clear input field
+        input.focus(); // Focus back on the input field
+
+        if (isNaN(inputValue)) {
+          resultDisplay.innerText = "Invalid input. Please enter a number.";
+          return;
+        }
+
+        if (inputValue % 2 === 0) {
+          arr1.push(inputValue);
+          resultDisplay.innerText = "Even Array: " + arr1.join(", ");
+        } else {
+          arr2.push(inputValue);
+          resultDisplay.innerText = "Odd Array: " + arr2.join(", ");
+        }
+      });
+      document.getElementById("prnt").addEventListener("click", function(){
+        resultDisplay.innerText = "Even Array: " + arr1.join(", ") + "\nOdd Array: " + arr2.join(", ");
+      });
+
+      document.getElementById("filter").addEventListener("click", function(){
+        let filterInput = document.getElementById("inp2").value;
+
+        let x=arr1.filter((val)=>{
+            return val==filterInput;
+        });
+        let y=arr2.filter((val)=>{
+
+            return val==filterInput;
+        });
+         resultDisplay.innerText=("present in arr1"+x)
+         resultDisplay.innerText=("present in arr1"+y)
+
+      });
+      
+
+    </script>
+</body>
+</html>
