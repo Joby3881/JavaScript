@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const complexData = [
+          {
+            id: 1,
+            name: "John Doe",
+            age: 30,
+            address: {
+              street: "123 Main St",
+              city: "Anytown",
+              country: "USA",
+            },
+            orders: [
+              { orderId: "A123", amount: 50.75, status: "completed" },
+              { orderId: "B456", amount: 30.25, status: "pending" },
+            ],
+          },
+          {
+            id: 2,
+            name: "Jane Smith",
+            age: 25,
+            address: {
+              street: "456 Oak St",
+              city: "Othercity",
+              country: "USA",
+            },
+            orders: [
+              { orderId: "C789", amount: 100.5, status: "completed" },
+              { orderId: "D012", amount: 75.2, status: "completed" },
+            ],
+          },
+        ];
+
+        //Filter users who are aged 25 or younger.
+        // console.log(complexData)
+        
+        // let fitername=complexData.filter((val)=>{
+        //     return val.age<=25;
+        // });
+        // console.log(fitername)
+
+        //Map the array to get an array of user names.
+        // let a=complexData.map((val)=>{
+        //     return val.name;
+        // });
+        // console.log(a)
+
+        //Filter orders with an amount greater than 50.
+        //   let b=complexData.flatMap((val)=>{
+        //     return val.orders.filter((val)=>{
+        //         return val.amount>50;
+        //     })     
+        // })
+        // console.log(b)
+
+        //Map the array to get an array of order IDs
+        // let c=complexData.flatMap((v)=>{
+        //     return v.orders.map((i)=>{
+        //         return i.orderId;
+        //     })
+        // })
+        // console.log(c)
+    </script>
+</body>
+</html>
